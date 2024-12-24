@@ -77,6 +77,18 @@
 
             label = "NEW_MACRO";
         };
+
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&macro_pause_for_release>,
+                <&macro_param_1to1>,
+                <&macro_tap>,
+                <&tog MACRO_PLACEHOLDER>;
+
+            label = "NEW_MACRO";
+        };
     };
 
     keymap {
@@ -108,7 +120,7 @@
 
         Mouse {
             bindings = <
-&none  &none         &none         &none      &hold_layer 2   &none    &kp LC(Y)       &kp LC(V)       &kp LC(C)     &kp LC(X)        &kp LC(Z)  &none
+&none  &none         &none         &none      &new_macro 2    &none    &kp LC(Y)       &kp LC(V)       &kp LC(C)     &kp LC(X)        &kp LC(Z)  &none
 &none  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp MB4   &none
 &none  &none         &none         &none      &to 0           &none    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &mkp MB5   &none
                                    &none      &none           &none    &mkp RCLK       &mkp LCLK       &mkp MCLK
