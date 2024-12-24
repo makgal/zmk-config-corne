@@ -78,7 +78,7 @@
             label = "NEW_MACRO";
         };
 
-        test: new_macro {
+        test: test {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
@@ -87,7 +87,7 @@
                 <&macro_tap>,
                 <&tog MACRO_PLACEHOLDER>;
 
-            label = "NEW_MACRO";
+            label = "test";
         };
     };
 
@@ -169,6 +169,15 @@
 &none  &kp F11  &kp F4  &kp F5     &kp F6     &kp SCROLLLOCK     &none  &kp LSHFT      &kp LCTRL  &kp LALT  &kp LGUI  &none
 &none  &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK    &none  &to 0          &none      &none     &none     &none
                         &kp K_APP  &kp SPACE  &kp ENTER          &none  &none          &none
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
