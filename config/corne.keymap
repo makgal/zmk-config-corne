@@ -69,7 +69,7 @@
         nav: nav {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_pause_for_release>, <&to 1>;
+            bindings = <&macro_pause_for_release>, <&macro_tap>, <&to 1>;
 
             label = "NAV";
         };
