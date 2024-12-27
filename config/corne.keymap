@@ -117,10 +117,10 @@
 
         Button {
             bindings = <
-&none  &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp LC(Y)    &kp LC(Y)  &kp LC(V)       &kp LC(C)  &kp LC(X)     &kp LC(Z)     &none
-&none  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none        &none      &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &none
-&none  &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp LC(Y)    &kp LC(Y)  &kp LC(V)       &kp LC(C)  &kp LC(X)     &kp LC(Z)     &none
-                                   &mkp MCLK  &mkp LCLK       &mkp RCLK    &mkp RCLK  &mkp LCLK       &mkp MCLK
+&none  &kp LC(Z)     &kp LC(X)     &kp LC(C)   &kp LC(V)       &kp LC(Y)    &kp LC(Y)  &kp LC(V)       &kp LC(C)   &kp LC(X)     &kp LC(Z)     &none
+&none  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL   &kp LEFT_SHIFT  &none        &none      &kp LEFT_SHIFT  &kp LCTRL   &kp LEFT_ALT  &kp LEFT_WIN  &none
+&none  &kp LC(Z)     &kp LC(X)     &kp LC(C)   &kp LC(V)       &kp LC(Y)    &kp LC(Y)  &kp LC(V)       &kp LC(C)   &kp LC(X)     &kp LC(Z)     &none
+                                   &kp DELETE  &kp BACKSPACE   &kp ENTER    &kp ENTER  &kp BACKSPACE   &kp DELETE
             >;
         };
 
