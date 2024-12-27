@@ -117,10 +117,10 @@
 
         Button {
             bindings = <
-&none  &kp LC(Z)     &kp LC(X)     &kp LC(C)   &kp LC(V)       &kp LC(Y)    &kp LC(Y)  &kp LC(V)       &kp LC(C)   &kp LC(X)     &kp LC(Z)     &none
-&none  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL   &kp LEFT_SHIFT  &none        &none      &kp LEFT_SHIFT  &kp LCTRL   &kp LEFT_ALT  &kp LEFT_WIN  &none
-&none  &kp LC(Z)     &kp LC(X)     &kp LC(C)   &kp LC(V)       &kp LC(Y)    &kp LC(Y)  &kp LC(V)       &kp LC(C)   &kp LC(X)     &kp LC(Z)     &none
-                                   &kp DELETE  &kp BACKSPACE   &kp ENTER    &kp ENTER  &kp BACKSPACE   &kp DELETE
+&none  &kp LC(Z)     &kp LC(X)     &kp LC(C)   &kp LC(V)       &kp LC(Y)     &kp LC(Y)   &kp LC(V)       &kp LC(C)   &kp LC(X)     &kp LC(Z)     &none
+&none  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL   &kp LEFT_SHIFT  &kp ESCAPE    &kp ESCAPE  &kp LEFT_SHIFT  &kp LCTRL   &kp LEFT_ALT  &kp LEFT_WIN  &none
+&none  &none         &none         &kp HOME    &kp END         &kp TAB       &kp TAB     &kp END         &kp HOME    &none         &none         &none
+                                   &kp DELETE  &kp BACKSPACE   &kp ENTER     &kp ENTER   &kp BACKSPACE   &kp DELETE
             >;
         };
 
