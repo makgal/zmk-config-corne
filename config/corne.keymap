@@ -47,10 +47,9 @@
         hrm: hrm {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <125>;
+            quick-tap-ms = <0>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -60,9 +59,8 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <125>;
-            flavor = "tap-preferred";
+            quick-tap-ms = <0>;
+            flavor = "balanced";
         };
 
         right_bracket_tapdance: right_bracket_tapdance {
