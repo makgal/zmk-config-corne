@@ -48,8 +48,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <199>;
-            quick-tap-ms = <0>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -59,7 +59,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
+            quick-tap-ms = <200>;
             flavor = "balanced";
         };
 
