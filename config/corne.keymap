@@ -23,6 +23,16 @@
             key-positions = <16 19>;
             layers = <0>;
         };
+
+        alt_shift_left {
+            bindings = <&kp LA(LEFT_SHIFT)>;
+            key-positions = <17 15>;
+        };
+
+        alt_shift_right {
+            bindings = <&kp LA(LEFT_SHIFT)>;
+            key-positions = <18 20>;
+        };
     };
 
     behaviors {
@@ -98,10 +108,10 @@
 
         Nav {
             bindings = <
-&none  &none         &none         &none      &toggle_layer 1     &none    &kp LC(Y)  &kp LC(V)      &kp LC(C)    &kp LC(X)  &kp LC(Z)     &none
-&none  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT      &none    &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &kp CAPSLOCK  &none
-&none  &none         &none         &none      &kp LA(LEFT_SHIFT)  &none    &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp INSERT    &none
-                                   &none      &none               &none    &kp ENTER  &kp BACKSPACE  &kp DELETE
+&none  &none         &none         &none      &toggle_layer 1  &none    &kp LC(Y)  &kp LC(V)      &kp LC(C)    &kp LC(X)  &kp LC(Z)     &none
+&none  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT   &none    &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &kp CAPSLOCK  &none
+&none  &none         &none         &none      &none            &none    &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp INSERT    &none
+                                   &none      &none            &none    &kp ENTER  &kp BACKSPACE  &kp DELETE
             >;
         };
 
@@ -116,10 +126,10 @@
 
         Button {
             bindings = <
-&none  &kp LC(Z)     &kp LC(X)     &kp LC(C)   &kp LC(V)       &kp LC(Y)     &kp LC(Y)   &kp LC(V)       &kp LC(C)   &kp LC(X)     &kp LC(Z)     &none
-&none  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL   &kp LEFT_SHIFT  &kp ESCAPE    &kp ESCAPE  &kp LEFT_SHIFT  &kp LCTRL   &kp LEFT_ALT  &kp LEFT_WIN  &none
-&none  &none         &none         &kp HOME    &kp END         &kp TAB       &kp TAB     &kp END         &kp HOME    &none         &none         &none
-                                   &kp DELETE  &kp BACKSPACE   &kp ENTER     &kp ENTER   &kp BACKSPACE   &kp DELETE
+&none  &kp LC(Z)     &kp LC(X)     &kp LC(C)   &kp LC(V)       &kp LC(Y)    &kp LC(Y)  &kp LC(V)       &kp LC(C)   &kp LC(X)     &kp LC(Z)     &none
+&none  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL   &kp LEFT_SHIFT  &kp LC(A)    &kp LC(A)  &kp LEFT_SHIFT  &kp LCTRL   &kp LEFT_ALT  &kp LEFT_WIN  &none
+&none  &none         &none         &kp HOME    &kp END         &none        &none      &kp HOME        &kp END     &none         &none         &none
+                                   &kp DELETE  &kp BACKSPACE   &kp ENTER    &kp ENTER  &kp BACKSPACE   &kp DELETE
             >;
         };
 
