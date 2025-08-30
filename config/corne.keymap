@@ -22,12 +22,12 @@
         };
 
         win_left {
-            bindings = <&kp LA(LEFT_WIN)>;
+            bindings = <&kp LEFT_WIN>;
             key-positions = <16 15>;
         };
 
         win_right {
-            bindings = <&kp LA(RIGHT_WIN)>;
+            bindings = <&kp RIGHT_WIN>;
             key-positions = <19 20>;
         };
     };
