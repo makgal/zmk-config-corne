@@ -121,7 +121,7 @@
 
         Button {
             bindings = <
-&none  &kp LC(Z)     &kp LC(X)  &kp LC(C)     &kp LC(V)       &kp LC(Y)    &kp LC(Y)  &kp LC(V)        &kp LC(C)      &kp LC(X)  &kp LC(Z)      &none
+&none  &kp LC(Z)     &kp LC(X)  &kp K_COPY    &kp LC(V)       &kp LC(Y)    &kp LC(Y)  &kp LC(V)        &kp LC(C)      &kp LC(X)  &kp LC(Z)      &none
 &none  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_WIN  &kp LEFT_SHIFT  &kp LC(A)    &kp LC(A)  &kp RIGHT_SHIFT  &kp RIGHT_WIN  &kp RCTRL  &kp RIGHT_ALT  &none
 &none  &none         &none      &kp HOME      &kp END         &none        &none      &kp HOME         &kp END        &none      &none          &none
                                 &kp DELETE    &kp BACKSPACE   &kp ENTER    &kp ENTER  &kp BACKSPACE    &kp DELETE
