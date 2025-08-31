@@ -32,13 +32,13 @@
         };
 
         go_to_base_level_1 {
-            bindings = <&tog 0>;
+            bindings = <&to 0>;
             key-positions = <4 3>;
             layers = <5 6 7>;
         };
 
         go_to_base_level_2 {
-            bindings = <&tog 0>;
+            bindings = <&to 0>;
             key-positions = <8 7>;
             layers = <1 2 4>;
         };
@@ -135,28 +135,28 @@
 
         Num {
             bindings = <
-&kp COMMA   &kp LBKT   &kp N7        &kp N8   &kp N9  &kp RBKT     &none  &toggle_layer 5  &none          &none       &none          &none
-&kp PERIOD  &kp SEMI   &kp N4        &kp N5   &kp N6  &kp EQUAL    &none  &kp RIGHT_SHIFT  &kp RIGHT_WIN  &kp RCTRL   &kp RIGHT_ALT  &none
-&kp SLASH   &kp GRAVE  &kp NUMBER_1  &kp N2   &kp N3  &kp BSLH     &none  &kp SPACE        &kp BACKSPACE  &kp DELETE  &kp ENTER      &none
-                                     &kp DOT  &kp N0  &kp MINUS    &none  &none            &none
+&kp COMMA   &kp LBKT   &kp N7        &kp N8   &kp N9  &kp RBKT     &none          &toggle_layer 5  &none          &none      &none               &none
+&kp PERIOD  &kp SEMI   &kp N4        &kp N5   &kp N6  &kp EQUAL    &kp BACKSPACE  &kp RIGHT_SHIFT  &kp RIGHT_WIN  &kp RCTRL  &hrm RIGHT_ALT DEL  &none
+&kp SLASH   &kp GRAVE  &kp NUMBER_1  &kp N2   &kp N3  &kp BSLH     &none          &kp SPACE        &kp ENTER      &none      &none               &none
+                                     &kp DOT  &kp N0  &kp MINUS    &none          &none            &none
             >;
         };
 
         Sym {
             bindings = <
-&kp LESS_THAN     &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK      &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &none  &toggle_layer 6  &none          &none       &none          &none
-&kp GREATER_THAN  &kp COLON       &kp DOLLAR       &kp PERCENT       &kp CARET              &kp PLUS           &none  &kp RIGHT_SHIFT  &kp RIGHT_WIN  &kp RCTRL   &kp RIGHT_ALT  &none
-&kp QUESTION      &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN       &kp HASH               &kp PIPE           &none  &kp SPACE        &kp BACKSPACE  &kp DELETE  &kp ENTER      &none
-                                                   &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &none  &none            &none
+&kp LESS_THAN     &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK      &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &none          &toggle_layer 6  &none          &none      &none                  &none
+&kp GREATER_THAN  &kp COLON       &kp DOLLAR       &kp PERCENT       &kp CARET              &kp PLUS           &kp BACKSPACE  &kp RIGHT_SHIFT  &kp RIGHT_WIN  &kp RCTRL  &hrm RIGHT_ALT DELETE  &none
+&kp QUESTION      &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN       &kp HASH               &kp PIPE           &none          &kp SPACE        &kp ENTER      &none      &none                  &none
+                                                   &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &none          &none            &none
             >;
         };
 
         Fun {
             bindings = <
-&none  &kp F12  &kp F7  &kp F8     &kp F9     &kp PRINTSCREEN    &none  &toggle_layer 7  &none          &none      &none          &none
-&none  &kp F11  &kp F4  &kp F5     &kp F6     &kp SCROLLLOCK     &none  &kp RIGHT_SHIFT  &kp RIGHT_WIN  &kp RCTRL  &kp RIGHT_ALT  &none
-&none  &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK    &none  &none            &none          &none      &none          &none
-                        &kp K_APP  &kp SPACE  &kp ENTER          &none  &none            &none
+&kp F15  &kp F12  &kp F7  &kp F8     &kp F9     &kp PRINTSCREEN    &none  &toggle_layer 7  &none          &none      &none          &none
+&kp F14  &kp F11  &kp F4  &kp F5     &kp F6     &kp SCROLLLOCK     &none  &kp RIGHT_SHIFT  &kp RIGHT_WIN  &kp RCTRL  &kp RIGHT_ALT  &none
+&kp F13  &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK    &none  &none            &none          &none      &none          &none
+                          &kp K_APP  &kp SPACE  &kp ENTER          &none  &none            &none
             >;
         };
 
