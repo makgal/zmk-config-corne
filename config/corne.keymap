@@ -150,10 +150,10 @@
 
         swap_mods {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                     &mo 7  &mo 5  &mo 6    &mo 2  &mo 1  &mo 4
+&none  &none  &none  &none            &none            &none              &none            &none            &none            &none  &none  &none
+&none  &none  &none  &none            &none            &none              &none            &none            &none            &none  &none  &none
+&none  &none  &none  &none            &none            &none              &none            &none            &none            &none  &none  &none
+                     &toggle_layer 7  &toggle_layer 5  &toggle_layer 6    &toggle_layer 2  &toggle_layer 1  &toggle_layer 4
             >;
         };
     };
