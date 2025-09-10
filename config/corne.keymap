@@ -145,10 +145,10 @@
 
         Sym {
             bindings = <
-&none         &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK      &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &none          &toggle_layer 6  &none          &none      &none                  &none
-&kp QUESTION  &kp TILDE       &kp DOLLAR       &kp PERCENT       &kp CARET              &kp PLUS           &kp BACKSPACE  &kp RIGHT_SHIFT  &kp RIGHT_WIN  &kp RCTRL  &hrm RIGHT_ALT DELETE  &none
-&none         &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN       &kp HASH               &kp PIPE           &none          &kp SPACE        &kp ENTER      &none      &none                  &none
-                                               &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &none          &none            &none
+&none         &kp LEFT_BRACE     &kp AMPERSAND    &kp ASTERISK      &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &none          &toggle_layer 6  &none          &none      &none                  &none
+&kp QUESTION  &kp DOUBLE_QUOTES  &kp DOLLAR       &kp PERCENT       &kp CARET              &kp PLUS           &kp BACKSPACE  &kp RIGHT_SHIFT  &kp RIGHT_WIN  &kp RCTRL  &hrm RIGHT_ALT DELETE  &none
+&none         &kp TILDE          &kp EXCLAMATION  &kp AT_SIGN       &kp HASH               &kp PIPE           &none          &kp SPACE        &kp ENTER      &none      &none                  &none
+                                                  &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &none          &none            &none
             >;
         };
 
