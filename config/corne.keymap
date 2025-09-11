@@ -53,8 +53,6 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
-
-            require-prior-idle-ms = <100>;
         };
 
         hmm: hmm {
@@ -65,7 +63,6 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             flavor = "balanced";
-            require-prior-idle-ms = <100>;
         };
     };
 
