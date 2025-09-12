@@ -33,50 +33,86 @@
         };
 
         go_to_base_left {
-            bindings = <&tog 0>;
+            bindings = <&to 0>;
             key-positions = <4 3>;
             layers = <5 6 7>;
         };
 
         go_to_base_right {
-            bindings = <&tog 0>;
+            bindings = <&to 0>;
             key-positions = <8 7>;
             layers = <1 2 4>;
         };
 
         constant_nav {
-            bindings = <&tog 1>;
+            bindings = <&to 1>;
             key-positions = <37 4>;
             layers = <0>;
         };
 
         constant_mouse {
-            bindings = <&tog 2>;
+            bindings = <&to 2>;
             key-positions = <38 4>;
             layers = <0>;
         };
 
         constant_media {
-            bindings = <&tog 4>;
+            bindings = <&to 4>;
             key-positions = <4 36>;
             layers = <0>;
         };
 
         constant_num {
-            bindings = <&tog 5>;
+            bindings = <&to 5>;
             key-positions = <7 40>;
             layers = <0>;
         };
 
         constant_sym {
-            bindings = <&tog 6>;
+            bindings = <&to 6>;
             key-positions = <7 39>;
             layers = <0>;
         };
 
         constant_fun {
-            bindings = <&tog 7>;
+            bindings = <&to 7>;
             key-positions = <41 7>;
+        };
+
+        go_to_num {
+            bindings = <&to 5>;
+            key-positions = <37 28>;
+            layers = <0>;
+        };
+
+        go_to_sym {
+            bindings = <&to 6>;
+            key-positions = <38 28>;
+            layers = <0>;
+        };
+
+        go_to_fun {
+            bindings = <&to 7>;
+            key-positions = <36 28>;
+            layers = <0>;
+        };
+
+        go_to_nav {
+            bindings = <&to 1>;
+            key-positions = <31 40>;
+            layers = <0>;
+        };
+
+        go_to_mouse {
+            bindings = <&to 2>;
+            key-positions = <31 39>;
+            layers = <0>;
+        };
+
+        go_to_media {
+            bindings = <&to 2>;
+            key-positions = <31 41>;
+            layers = <0>;
         };
     };
 
