@@ -32,16 +32,51 @@
             key-positions = <19 20>;
         };
 
-        go_to_base_level_1 {
+        go_to_base_left {
             bindings = <&to 0>;
             key-positions = <4 3>;
             layers = <5 6 7>;
         };
 
-        go_to_base_level_2 {
+        go_to_base_right {
             bindings = <&to 0>;
             key-positions = <8 7>;
             layers = <1 2 4>;
+        };
+
+        constant_nav {
+            bindings = <&none>;
+            key-positions = <37 4>;
+            layers = <0>;
+        };
+
+        constant_mouse {
+            bindings = <&none>;
+            key-positions = <38 4>;
+            layers = <0>;
+        };
+
+        constant_media {
+            bindings = <&none>;
+            key-positions = <4 36>;
+            layers = <0>;
+        };
+
+        constant_num {
+            bindings = <&none>;
+            key-positions = <7 40>;
+            layers = <0>;
+        };
+
+        constant_sym {
+            bindings = <&none>;
+            key-positions = <7 39>;
+            layers = <0>;
+        };
+
+        constant_fun {
+            bindings = <&none>;
+            key-positions = <41 7>;
         };
     };
 
@@ -66,20 +101,6 @@
         };
     };
 
-    macros {
-        toggle_layer: test {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_pause_for_release>,
-                <&macro_param_1to1>,
-                <&macro_tap>,
-                <&tog MACRO_PLACEHOLDER>;
-
-            label = "test";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -91,7 +112,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp GRAVE  &kp Q            &kp W         &kp E            &hmm 8 R           &kp T         &kp Y         &hmm 8 U            &kp I             &kp O         &kp P                &kp LEFT_BRACKET
+&kp GRAVE  &kp Q            &kp W         &kp E            &kt R              &kp T         &kp Y         &kt U               &kp I             &kp O         &kp P                &kp LEFT_BRACKET
 &none      &hrm LEFT_ALT A  &hrm LCTRL S  &hrm LEFT_WIN D  &hrm LEFT_SHIFT F  &kp G         &kp H         &hrm RIGHT_SHIFT J  &hrm RIGHT_WIN K  &hrm RCTRL L  &hrm RIGHT_ALT SEMI  &kp SQT
 &none      &hmm 3 Z         &kp X         &kp C            &kp V              &kp B         &kp N         &kp M               &kp COMMA         &kp DOT       &hmm 3 SLASH         &kp RIGHT_BRACKET
                                           &hmm 4 ESCAPE    &hmm 1 SPACE       &hmm 2 TAB    &hmm 6 ENTER  &hmm 5 BACKSPACE    &hmm 7 DELETE
@@ -100,19 +121,19 @@
 
         Nav {
             bindings = <
-&none  &none         &none      &none         &toggle_layer 1  &none    &kp LG(Y)  &kp LG(V)      &kp LG(C)    &kp LG(X)  &kp LG(Z)     &kp LG(A)
-&none  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_WIN  &kp LEFT_SHIFT   &none    &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &kp CAPSLOCK  &none
-&none  &none         &none      &none         &none            &none    &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp INSERT    &none
-                                &none         &none            &none    &kp ENTER  &kp BACKSPACE  &kp DELETE
+&none  &none         &none      &none         &none           &none    &kp LG(Y)  &kp LG(V)      &kp LG(C)    &kp LG(X)  &kp LG(Z)     &kp LG(A)
+&none  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_WIN  &kp LEFT_SHIFT  &none    &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &kp CAPSLOCK  &none
+&none  &none         &none      &none         &none           &none    &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp INSERT    &none
+                                &none         &none           &none    &kp ENTER  &kp BACKSPACE  &kp DELETE
             >;
         };
 
         Mouse {
             bindings = <
-&none  &none         &none      &none         &toggle_layer 2  &none    &kp LG(Y)       &kp LG(V)       &kp LG(C)     &kp LG(X)        &kp LG(Z)  &kp LG(A)
-&none  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_WIN  &kp LEFT_SHIFT   &none    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp MB4   &none
-&none  &none         &none      &none         &none            &none    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &mkp MB5   &none
-                                &none         &none            &none    &mkp RCLK       &mkp LCLK       &mkp MCLK
+&none  &none         &none      &none         &none           &none    &kp LG(Y)       &kp LG(V)       &kp LG(C)     &kp LG(X)        &kp LG(Z)  &kp LG(A)
+&none  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_WIN  &kp LEFT_SHIFT  &none    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp MB4   &none
+&none  &none         &none      &none         &none           &none    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &mkp MB5   &none
+                                &none         &none           &none    &mkp RCLK       &mkp LCLK       &mkp MCLK
             >;
         };
 
@@ -127,16 +148,16 @@
 
         Media {
             bindings = <
-&none  &none         &none      &none         &toggle_layer 4  &none    &none         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none         &none       &none
-&none  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_WIN  &kp LEFT_SHIFT   &none    &kt C_PREV    &kp C_VOL_DN          &kp C_VOL_UP          &kp C_NEXT    &none       &none
-&none  &none         &none      &none         &none            &none    &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_CLR  &none
-                                &none         &none            &none    &kp C_STOP    &kp C_PLAY_PAUSE      &kp C_MUTE
+&none  &none         &none      &none         &none           &none    &none         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none         &none       &none
+&none  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_WIN  &kp LEFT_SHIFT  &none    &kt C_PREV    &kp C_VOL_DN          &kp C_VOL_UP          &kp C_NEXT    &none       &none
+&none  &none         &none      &none         &none           &none    &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_CLR  &none
+                                &none         &none           &none    &kp C_STOP    &kp C_PLAY_PAUSE      &kp C_MUTE
             >;
         };
 
         Num {
             bindings = <
-&none      &kp LBKT   &kp N7        &kp N8   &kp N9  &kp RBKT     &none          &toggle_layer 5  &none          &none      &none               &none
+&none      &kp LBKT   &kp N7        &kp N8   &kp N9  &kp RBKT     &none          &none            &none          &none      &none               &none
 &kp SLASH  &kp SQT    &kp N4        &kp N5   &kp N6  &kp EQUAL    &kp BACKSPACE  &kp RIGHT_SHIFT  &kp RIGHT_WIN  &kp RCTRL  &hrm RIGHT_ALT DEL  &none
 &none      &kp GRAVE  &kp NUMBER_1  &kp N2   &kp N3  &kp BSLH     &none          &kp SPACE        &kp ENTER      &none      &none               &none
                                     &kp DOT  &kp N0  &kp MINUS    &none          &none            &none
@@ -145,7 +166,7 @@
 
         Sym {
             bindings = <
-&none         &kp LEFT_BRACE     &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &none          &toggle_layer 6  &none          &none      &none                  &none
+&none         &kp LEFT_BRACE     &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &none          &none            &none          &none      &none                  &none
 &kp QUESTION  &kp DOUBLE_QUOTES  &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS           &kp BACKSPACE  &kp RIGHT_SHIFT  &kp RIGHT_WIN  &kp RCTRL  &hrm RIGHT_ALT DELETE  &none
 &none         &kp TILDE          &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE           &none          &kp SPACE        &kp ENTER      &none      &none                  &none
                                                   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &none          &none            &none
@@ -154,19 +175,10 @@
 
         Fun {
             bindings = <
-&kp F15  &kp F12  &kp F7  &kp F8     &kp F9     &kp PRINTSCREEN    &none  &toggle_layer 7  &none          &none      &none          &none
+&kp F15  &kp F12  &kp F7  &kp F8     &kp F9     &kp PRINTSCREEN    &none  &none            &none          &none      &none          &none
 &kp F14  &kp F11  &kp F4  &kp F5     &kp F6     &kp SCROLLLOCK     &none  &kp RIGHT_SHIFT  &kp RIGHT_WIN  &kp RCTRL  &kp RIGHT_ALT  &none
 &kp F13  &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK    &none  &none            &none          &none      &none          &none
                           &kp K_APP  &kp SPACE  &kp ENTER          &none  &none            &none
-            >;
-        };
-
-        swap_mods {
-            bindings = <
-&none  &none  &none  &none            &none            &none              &none            &none            &none            &none  &none  &none
-&none  &none  &none  &none            &none            &none              &none            &none            &none            &none  &none  &none
-&none  &none  &none  &none            &none            &none              &none            &none            &none            &none  &none  &none
-                     &toggle_layer 7  &toggle_layer 5  &toggle_layer 6    &toggle_layer 2  &toggle_layer 1  &toggle_layer 4
             >;
         };
     };
