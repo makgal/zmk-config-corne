@@ -20,99 +20,123 @@
             bindings = <&caps_word>;
             key-positions = <16 19>;
             layers = <0>;
+            require-prior-idle-ms = <(-1)>;
         };
 
         win_left {
             bindings = <&kp LEFT_WIN>;
             key-positions = <16 15>;
+            require-prior-idle-ms = <(-1)>;
         };
 
         win_right {
             bindings = <&kp RIGHT_WIN>;
             key-positions = <19 20>;
+            require-prior-idle-ms = <(-1)>;
         };
 
         go_to_base_left {
             bindings = <&to 0>;
             key-positions = <4 3>;
-            layers = <5 6 7>;
+            layers = <5 6 7 8>;
+            require-prior-idle-ms = <(-1)>;
         };
 
         go_to_base_right {
             bindings = <&to 0>;
             key-positions = <8 7>;
             layers = <1 2 4>;
+            require-prior-idle-ms = <(-1)>;
         };
 
         constant_nav {
             bindings = <&to 1>;
             key-positions = <37 4>;
             layers = <0>;
+            require-prior-idle-ms = <(-1)>;
         };
 
         constant_mouse {
             bindings = <&to 2>;
             key-positions = <38 4>;
             layers = <0>;
+            require-prior-idle-ms = <(-1)>;
         };
 
         constant_media {
             bindings = <&to 4>;
             key-positions = <4 36>;
             layers = <0>;
+            require-prior-idle-ms = <(-1)>;
         };
 
         constant_num {
             bindings = <&to 5>;
             key-positions = <7 40>;
             layers = <0>;
+            require-prior-idle-ms = <(-1)>;
         };
 
         constant_sym {
             bindings = <&to 6>;
             key-positions = <7 39>;
             layers = <0>;
+            require-prior-idle-ms = <(-1)>;
         };
 
         constant_fun {
             bindings = <&to 7>;
             key-positions = <41 7>;
+            require-prior-idle-ms = <(-1)>;
         };
 
         go_to_num {
             bindings = <&to 5>;
             key-positions = <37 28>;
             layers = <0>;
+            require-prior-idle-ms = <(-1)>;
         };
 
         go_to_sym {
             bindings = <&to 6>;
             key-positions = <38 28>;
             layers = <0>;
+            require-prior-idle-ms = <(-1)>;
         };
 
         go_to_fun {
             bindings = <&to 7>;
             key-positions = <36 28>;
             layers = <0>;
+            require-prior-idle-ms = <(-1)>;
         };
 
         go_to_nav {
             bindings = <&to 1>;
             key-positions = <31 40>;
             layers = <0>;
+            require-prior-idle-ms = <(-1)>;
         };
 
         go_to_mouse {
             bindings = <&to 2>;
             key-positions = <31 39>;
             layers = <0>;
+            require-prior-idle-ms = <(-1)>;
         };
 
         go_to_media {
             bindings = <&to 2>;
             key-positions = <31 41>;
             layers = <0>;
+            require-prior-idle-ms = <(-1)>;
+        };
+
+        go_to_left_nav {
+            bindings = <&to 8>;
+            key-positions = <17 37>;
+            layers = <0>;
+            require-prior-idle-ms = <(-1)>;
         };
     };
 
@@ -215,6 +239,15 @@
 &kp F14  &kp F11  &kp F4  &kp F5     &kp F6     &kp SCROLLLOCK     &none  &kp RIGHT_SHIFT  &kp RIGHT_WIN  &kp RCTRL  &kp RIGHT_ALT  &none
 &kp F13  &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK    &none  &none            &none          &none      &none          &none
                           &kp K_APP  &kp SPACE  &kp ENTER          &none  &none            &none
+            >;
+        };
+
+        Nav_left {
+            bindings = <
+&kp LG(A)  &kp LG(Z)  &kp LG(X)       &kp LG(C)     &kp LG(V)       &kp LG(Y)    &none  &none  &none  &none  &none  &none
+&none      &kp CAPS   &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT    &none  &none  &none  &none  &none  &none
+&none      &kp INS    &kp HOME        &kp PAGE_UP   &kp PAGE_DOWN   &kp END      &none  &none  &none  &none  &none  &none
+                                      &kp DEL       &kp BACKSPACE   &kp ENTER    &none  &none  &none
             >;
         };
     };
