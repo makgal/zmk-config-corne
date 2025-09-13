@@ -126,6 +126,12 @@
             key-positions = <17 38>;
             layers = <0>;
         };
+
+        command_grave {
+            bindings = <&kp LG(GRAVE)>;
+            key-positions = <4 3>;
+            layers = <0>;
+        };
     };
 
     behaviors {
