@@ -129,8 +129,7 @@
 
         command_grave {
             bindings = <&kp LG(GRAVE)>;
-            key-positions = <4 3>;
-            layers = <0>;
+            key-positions = <3 2>;
         };
     };
 
