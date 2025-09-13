@@ -122,7 +122,7 @@
         };
 
         go_to_left_mouse {
-            bindings = <&to 8>;
+            bindings = <&to 9>;
             key-positions = <17 38>;
             layers = <0>;
         };
